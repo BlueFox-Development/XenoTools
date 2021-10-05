@@ -3,7 +3,7 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { CLIENT_ID, TOKEN } = process.env;
 
-require('./deploy-commands.js');
+require('./deploy.js');
 
 const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -16,5 +16,5 @@ for (const file of commandFiles) {
 const rest = new REST({ version: '9' }).setToken(TOKEN);
 
 rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands })
-	.then(() => console.log('Successfully registered ' + commands.length + ' application commands.'))
+	.then(() => global.logger.info('Deployed slash commands'))
 	.catch(console.error);

@@ -6,7 +6,8 @@ const winston = require('winston');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
-require('./deploy-commands');
+// Deploy Slash Commands
+require('./deploy');
 
 // Logging
 global.logger = winston.createLogger({
