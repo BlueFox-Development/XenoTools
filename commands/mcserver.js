@@ -41,7 +41,7 @@ module.exports = {
                 });
             })
             .catch(function (error) {
-                console.error(error)
+                global.logger.error(error);
                 interaction.reply({ 
                     embeds: [
                         new MessageEmbed()

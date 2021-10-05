@@ -1,4 +1,4 @@
-module.exports = async (client, guild) => {
+module.exports = (client, guild) => {
     global.logger.info(`Joined guild: ${guild.name} (${guild.id}) with ${guild.memberCount} members`);
-    client.user.setActivity(`${client.guilds.cache.size} guilds | ${client.commands.length} commands`, { type: 'WATCHING' });
+    client.user.setActivity(`${client.guilds.cache.size} guilds`, { type: 'WATCHING' });
 }
