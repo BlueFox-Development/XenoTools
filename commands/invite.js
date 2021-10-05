@@ -10,7 +10,7 @@ module.exports = {
             embeds: [
                 new MessageEmbed()
                     .setTitle('Invite me!')
-                    .setDescription(`[Click-Here](https://discord.com/api/oauth2/authorize?client_id=894358851032317953&permissions=3147776&scope=bot%20applications.commands) to invite me!`)
+                    .setDescription(`[Click-Here](${process.env.INVITE}) to invite me!`)
                     .setColor('GREEN')
             ]
         });
