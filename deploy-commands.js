@@ -18,7 +18,3 @@ const rest = new REST({ version: '9' }).setToken(TOKEN);
 rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands })
 	.then(() => console.log('Successfully registered ' + commands.length + ' application commands.'))
 	.catch(console.error);
-
-rest.put(Routes.applicationGuildCommands(CLIENT_ID, '704423873415741510'), { body: commands })
-	.then(() => console.log('Successfully registered ' + commands.length + ' application commands.'))
-	.catch(console.error);
