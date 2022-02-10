@@ -22,5 +22,4 @@ node index.js
 
  # Credits
  1. FlaringPhoenix
- 2. Orashgle
- 3. physxx
+ 2. DIBSTER
