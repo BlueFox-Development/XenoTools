@@ -3,8 +3,6 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { CLIENT_ID, TOKEN } = process.env;
 
-require('./deploy.js');
-
 const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
