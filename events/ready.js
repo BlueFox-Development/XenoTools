@@ -3,7 +3,7 @@ module.exports = async (client) => {
 
     setTimeout(function() {
         client.user.setActivity(`${client.guilds.cache.size} guilds`, { type: 'WATCHING' });
-    }, 5000);
+    }, 60 * 1000);
 
     global.logger.info('XenoTools is online!');
 }
