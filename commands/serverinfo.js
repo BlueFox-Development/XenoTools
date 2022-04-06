@@ -1,6 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const { getTimeObject, getReadableTime } = require('quick-ms');
 
 module.exports = {
     data: new SlashCommandBuilder()
