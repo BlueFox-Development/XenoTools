@@ -11,7 +11,7 @@ module.exports = {
         interaction.reply({ 
             embeds: [
                 new MessageEmbed()
-                    .setTitle(`${target?.name} | ${target?.id}`)
+                    .setTitle(target?.name)
                     .addFields([
                         { name: 'Description', value: String(target.description), inline: true },
                         { name: 'Graphics', value: `[Icon](https://cdn.discordapp.com/icons/${target.id}/${target.icon}.webp?size=96)`, inline: true },
