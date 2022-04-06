@@ -13,7 +13,7 @@ module.exports = {
                     .setDescription('XenoTools is opensource on [GitHub](https://github.com/FlaringPhoenix/XenoTools)!')
                     .addFields([
                         { name: 'FlaringPhoenix#0001', value: '[GitHub](https://github.com/FlaringPhoenix) - [Twitter](https://twitter.com/phoenix_flaring)' },
-                        { name: 'DIBSTER#2317', value: '[GitHub](https://github.com/DIBSTERYT)' }
+                        { name: 'DIBSTER#2317', value: '[GitHub](https://github.com/DIBSTERYT) - [Twitter](https://github.com/DEV_DIBSTER)' }
                     ])
                     .setColor('GREEN')
             ]

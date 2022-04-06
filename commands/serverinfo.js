@@ -1,6 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
-const { getTimeObject, getReadableTime } = require('quick-ms');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -19,7 +18,7 @@ module.exports = {
                         { name: 'Vanity', value: String(target.vanityURLCode || 'none'), inline: true },
                         { name: 'Members', value: `${target.memberCount}/${target.maximumMembers}`, inline: true },
                         { name: 'Nitro Boosts', value: String(target.premiumSubscriptionCount), inline: true },
-                        { name: 'Created', value: `${getReadableTime(Date.now() - target.id / 4194304 + 1420070400000)} ago`}
+                        { name: 'Created', value: `<t:${Math.round(target?.createdTimestamp/1000)}:F>`}
                     ])
                     .setColor('AQUA')
                     .setFooter('Hosted by BlueFoxHost.com')
